@@ -1,3 +1,5 @@
+//this is example algorithm code to test how it will integrate with html
+
 function main() {
   if(this.id == "start"){
 
