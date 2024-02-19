@@ -1,4 +1,4 @@
-//first one by me!
+
 
 function main() {
   if(this.id == "start"){
@@ -30,7 +30,7 @@ function setup() {
 
 function draw() {
   background(200);
-  color1 = randColor(20,100);
+  color1 = randColor(75,125);
   color2 = complement(color1)
   console.log("color1: " + toString(color1[0]) + toString(color1[1]) + toString((color1[2])))//DEBUG
   
