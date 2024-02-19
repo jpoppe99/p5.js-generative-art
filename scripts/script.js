@@ -11,6 +11,7 @@ function main() {
 
 
 
+
 function randColor(a, b){//returns 3-tuple of value a-b
   return [Math.round(random(a,b)),Math.round(random(a,b)),Math.round(random(a,b))] 
 }
@@ -32,7 +33,7 @@ function draw() {
   background(200);
   color1 = randColor(75,125);
   color2 = complement(color1)
-  console.log("color1: " + toString(color1[0]) + toString(color1[1]) + toString((color1[2])))//DEBUG
+  console.log("color1: " + "r: " + color1[0].toString() + " g: " + color1[1].toString() + " b: " +color1[2].toString())//DEBUG
   
   change = [(color2[0] - color1[0])/pitch,(color2[0] - color1[0])/pitch,(color2[0] - color1[0])/pitch]
   console.log("change: "+ change[0])//DEBUG
