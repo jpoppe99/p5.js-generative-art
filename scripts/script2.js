@@ -17,7 +17,7 @@ function setup(){
 
   for(x = width; x > -size * canWidth; x -= size ) {
     for (y = height; y > -size * canHeight; y -= size){           
-      fill(randColor(0,155));
+      fill(randColor(0,160));
       push();
       translate(x + size/2, y + size/2);
       rect(0,0,size*floor(random(1,recwidth)), size*floor(random(1,recwidth)));
