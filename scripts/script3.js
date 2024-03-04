@@ -1,7 +1,8 @@
-//lines by me
+
 canWidth = 800;
 canHeight = 800;
 pointNum = 20;
+edgeNum = 20;
 
 function randColor(a, b){//returns 3-tuple of value a-b
   return [Math.round(random(a,b)),Math.round(random(a,b)),Math.round(random(a,b))] 
@@ -51,7 +52,7 @@ function setup(){
       console.log(points[i][0],points[i][1])
 
     }
-    edges = genEdges(points,15);
+    edges = genEdges(points,edgeNum);
     for (i = 0; i < edges.length; i++){
       for (j = 0; j < edges.length; j++){
         if (edges[i][j] == 1){
