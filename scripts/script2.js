@@ -2,7 +2,7 @@
 //https://www.youtube.com/watch?v=ig0q6vfpD38&t=3s
 
 function randColor(a, b){//returns 3-tuple of value a-b
-  return [Math.round(random(a,b)),Math.round(random(a,b)),Math.round(random(a,b))] 
+  return [round(random(a,b)),round(random(a,b)),round(random(a,b))] 
 }
 
 

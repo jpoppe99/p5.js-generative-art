@@ -1,3 +1,6 @@
+canWidth = 200;
+canHeight = 200
+
 const vector = {	//constructor for vector 
 	x: 0,
 	y: 0,
@@ -28,7 +31,7 @@ function normalize(v){//takes vector object and normalizes it
 }
 
 
-function perlin(x,y){/*
+function perlin(x,y){/*gives the perlin noise value for pixel at x,y
 	
 
 }
