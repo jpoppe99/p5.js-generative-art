@@ -12,9 +12,13 @@ function setup() {
   createCanvas(canWidth,canHeight);
   for (x = width; x >= 0;x-=size){
     for(y = height; y >= 0; y-=size){
-      stroke(1);
+      noStroke();
       fill(color1);
-      tile(x,y);
+      if (round(random() < .5)){
+      tile4(x,y);
+      } else {
+      tile5(x,y);
+      }
       color1[1] -= 2;
       console.log(color1);
     }
@@ -57,4 +61,27 @@ function tile3(x,y){
   }
 }
   
+  
+function tile4(x,y){  //this one
+  dir = round(random());
+  x2 = x - size;
+  y2 = y - size;
+  if (dir > .5){
+    triangle(x,y,x2,y2,x,y-size);
+  } else {
+    triangle(x,y,x2,y2,x-size,y);
+  }
+}
+
+
+function tile5(x,y){  //and this one
+  dir = round(random());
+  x2 = x - size;
+  y2 = y - size;
+  if (dir > .5){
+    triangle(x,y,x-size,y,x,y-size);
+  } else {
+    triangle(x,y,x-size,y-size,x,y-size);
+  }
+}
   
