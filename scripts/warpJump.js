@@ -31,9 +31,10 @@ function setup() {
   
   background(20);
     let gradient = drawingContext.createLinearGradient(0, 0, 0, canH);
-  gradient.addColorStop(0.0, "darkblue");
-  gradient.addColorStop(0.33, "black");
-  gradient.addColorStop(0.67,"purple")
+  gradient.addColorStop(0.0, "black");
+  gradient.addColorStop(random(.1,.25), "darkblue")
+  gradient.addColorStop(0.5, "black");
+  gradient.addColorStop(random(.6,.8),"purple")
   gradient.addColorStop(1.0, "black");
   drawingContext.fillStyle = gradient;
   
