@@ -13,8 +13,8 @@ const vector = {	//constructor for vector
 }
 
 function randomVector(limX, limY){
-	randX = floor(random(limX));
-	randY = floor(random(limY));
+	randX = floor(random(-limX,limX));
+	randY = floor(random(-limY,limY));
 	return vector.newvector(randX, randY);
 }
 
