@@ -26,7 +26,7 @@ function setup() {
   
   colorlist = ["orange","yellow","red",0xff00ff];
   colorlist2 = ["lightblue","blue","cyan","yellowgreen"];
-  colorlist1 = []
+  colorlist1 = ["white",0xfffae0,0x0fffe0,0xfae00f]
   angle = atan(slope);
   
   background(20);
@@ -58,8 +58,13 @@ function setup() {
       stroke(colorB);
     }
       ellipse(i,line1,random(12,40),random(100,200));
-    }
     
+    }
+    if (random() < .4) {
+          strokeWeight(1)
+          stroke(colorlist1[round(random(3))]);
+          point(i,line1)
+    }
   }
   pop();
   //rotate((2*Math.PI)-angle);
