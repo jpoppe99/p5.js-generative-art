@@ -39,7 +39,7 @@ function setup() {
   drawingContext.fillStyle = gradient;
   
   square(0,0,canH,);
-  fill(0,0,0,127);
+  fill(0,0,0,180);
   square(0,0,canH);//black opacity over everything
   push();
   translate(originX);
