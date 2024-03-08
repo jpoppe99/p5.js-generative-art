@@ -31,8 +31,12 @@ function normalize(v){//takes vector object and normalizes it
 }
 
 
-function perlin(x,y){/*gives the perlin noise value for pixel at x,y
-	
+function perlin(x,y){//gives the perlin noise value for pixel at x,y
+	veclist = [];
+	normlist = [];
+	for (i = 0; i < x; i++){
+		for (j = 0; j < )
+	}
 
 }
 
