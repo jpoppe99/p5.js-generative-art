@@ -12,10 +12,13 @@ h1 {
 
 }
 
-#start {
+ #buttons{
+  text-align: center;
+ }
+ 
+button {
   margin: 50px;
   padding: 5px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
