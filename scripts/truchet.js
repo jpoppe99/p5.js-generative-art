@@ -13,7 +13,7 @@ function complement(color1){
 
 function setup() {
   createCanvas(canWidth, canHeight);
-  
+  strokeWeight(3);
   color1 = randColor(25,240);
   color2=complement(color1);
   for (x = width; x > 0-size; x -= size){
@@ -44,7 +44,7 @@ function truchTile(x,y,size){//cross
   
   halfX = x + size/2;
   halfY = y + size/2;
-  strokeWeight(3);
+  
   stroke(color2)
   line(halfX,y,halfX,y+size)
   line(x,halfY,x+size,halfY)
@@ -73,14 +73,18 @@ function truchTile3(x,y,size){//diagonal
   line(halfX,y+size,x,halfY)
 }
 
-function truchTile4(x,y,size){//diamond
+function truchTile4(x,y,size){//circle with cross
+  fill(color1);
   noStroke();
   square(x,y,size);
   halfX = x + size/2;
   halfY = y + size/2;
-  stroke(3);
-  line(halfX,y,x,halfY)
-  line(halfX,y,x+size,halfY)
-  line(x,halfY,halfX,y+size)
-  line(halfX,y+size,x+size,halfY)
+  stroke(color2);
+  circle(halfX,halfY,size/4)
+  line(halfX,y,halfX,halfY-size/8)
+  line(halfX,y+size,halfX,halfY+size/8)
+  line(x,halfY,halfX-size/8,halfY)
+  line(x+size,halfY,halfX+size/8,halfY)
+  
+  
 }
