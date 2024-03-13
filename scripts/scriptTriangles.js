@@ -26,7 +26,7 @@ function setup() {
       } else {
       tile5(x,y);
       }
-      color1[1] -= 2;
+      //color1[1] -= 2;
       console.log(color1);
     }
       
