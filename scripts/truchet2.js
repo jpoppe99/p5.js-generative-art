@@ -84,10 +84,10 @@ for (x = width; x > 0-size; x -= size){
     for(y = height; y > 0-size; y -= size){
       val = random();
       if (val > .5){
-          roundTruch1a(x,y,size);        
+          roundTruch1b(x,y,size);        
           
           } else {
-            roundTruch2a(x,y,size)
+            roundTruch2b(x,y,size)
           }
       
     }
