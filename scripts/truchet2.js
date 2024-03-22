@@ -80,6 +80,7 @@ function setup(){
   createCanvas(canWidth,canHeight)
   color1 = randColor(0,255);
   color2 = complement(color1);
+  strokeCap(SQUARE)
 for (x = width; x > 0-size; x -= size){
     for(y = height; y > 0-size; y -= size){
       val = random();
