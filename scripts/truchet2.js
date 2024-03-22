@@ -38,6 +38,43 @@ function roundTruch2a(x,y,size){
   arc(x,y+size,size,size,PI+HALF_PI,2*PI);  
 }
 
+function roundTruch1b(x,y,size){
+  fill(color1);
+  noStroke();
+  halfX = x + size/2
+  halfY = y + size/2
+  square(x,y,size);
+  stroke(color2);
+  strokeWeight(size/3)
+  arc(x+size,y+size,size,size,PI,PI+HALF_PI);
+  arc(x,y,size,size,2*PI,HALF_PI);
+  
+  noFill();
+  stroke("white");
+  strokeWeight(size/20)
+  arc(x+size,y+size,size,size,PI,PI+HALF_PI);
+  arc(x,y,size,size,2*PI,HALF_PI);
+}
+
+
+function roundTruch2b(x,y,size){
+  fill(color1);
+  noStroke();
+  halfX = x + size/2
+  halfY = y + size/2
+  square(x,y,size);
+  stroke(color2);
+  strokeWeight(size/3)
+  arc(x+size,y,size,size,HALF_PI,PI);
+  arc(x,y+size,size,size,PI+HALF_PI,2*PI);  
+  noFill();
+  stroke("white");
+  strokeWeight(size/20)
+  arc(x+size,y,size,size,HALF_PI,PI);
+  arc(x,y+size,size,size,PI+HALF_PI,2*PI);  
+
+}
+
 
 function setup(){
   createCanvas(canWidth,canHeight)
