@@ -88,7 +88,7 @@ function setup() {
   createCanvas(800, 800);
   //strokeCap(ROUND)
   strokeCap(PROJECT)
-  size = 400;
+  size = 100;
   colorMode(HSB);
   //[c1,c2,c3] = HSBtriad(RandHSB());
   c1 = HSBtriad(RandHSB());
