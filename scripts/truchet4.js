@@ -3,7 +3,7 @@ let c1,c2,c3;
 
 
 function RandHSB(){
-  c = [round(random(360)),random(25,100),random(25,100)];
+  c = [round(random(360)),random(40,100),random(40,100)];
   
   return c
 }
@@ -54,7 +54,10 @@ function tileA(x,y,size){
     
   }*/
   translate(-x-size/2,-y-size/2)
-  clip(function mask(){square(x,y,size)})
+  //clip(function mask(){square(x,y,size)})
+  beginClip();
+  square(x,y,size);
+  endClip();
   x1 = x+size/4
   x2 = x+size/2
   x3 = x+size*(3/4)
