@@ -36,9 +36,16 @@ function tileA(x,y,size){
   translate(-x, -y);
   */
   push();
-  translate(x+size/2, y+size/2);
+  /*
+  translate(size/2, size/2);
   rotate(radians(random([0, 90, 180, 270])));
   translate(-size/2, -size/2);
+  */
+  translate(x, y);
+  rotate(radians(random([0, 90, 180, 270])));
+  translate(-x, -y);
+  
+  
   
   beginClip();
   square(x,y,size);
