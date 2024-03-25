@@ -1,5 +1,5 @@
 let c1,c2,c3;
-
+//TODO FIX CLIPS
 
 
 function RandHSB(){
