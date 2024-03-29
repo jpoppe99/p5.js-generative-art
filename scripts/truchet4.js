@@ -54,10 +54,12 @@ function tileA(x,y,size){
     
   }*/
   translate(-x-size/2,-y-size/2)
-  //clip(function mask(){square(x,y,size)})
+  clip(function mask(){square(x,y,size)})
+  /*
   beginClip();
   square(x,y,size);
   endClip();
+  */
   x1 = x+size/4
   x2 = x+size/2
   x3 = x+size*(3/4)
