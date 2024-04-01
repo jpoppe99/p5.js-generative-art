@@ -63,7 +63,7 @@ function setup() {
   translate(size/2,size/2);
   colorMode(HSB);
   t = 0;
-  frameRate(10);
+  frameRate(30);
   strokeWeight(5);
   c1 = RandHSB();
   //c1 = "purple"
