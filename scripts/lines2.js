@@ -60,11 +60,14 @@ function setup() {
   
     step = .1
   createCanvas(size,size);
-    translate(size/2,size/2);
+  translate(size/2,size/2);
+  colorMode(HSB);
   t = 0;
   frameRate(10);
   strokeWeight(5);
   c1 = RandHSB();
+  //c1 = "purple"
+  
   c2 = HSBtriad(c1);
   background(c2[0]);
   stroke(c2[1]);
