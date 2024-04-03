@@ -38,7 +38,7 @@ button {
 #artframe{
   height:820px;
   width:1100px;
-
+  border: 0;
 }
 
 footer{
