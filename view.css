@@ -24,7 +24,7 @@ button {
   text-align: center;
 
 }
-
+/*
 #art{
   display: block;
   margin-left: auto;
@@ -36,9 +36,31 @@ button {
 
 }
 #artframe{
+  border: none;
+  display: block;
   height:820px;
   width:1100px;
-  border: 0;
+  
+}
+*/
+
+#art{
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  height:820px;
+  width:1100px;
+  padding:0;
+  align-content: center;
+}
+
+#artframe{
+  display: flex;
+  height:820px;
+  width:1100px;
+  border: none;
+  padding:0;
+  align-content: center;
 }
 
 footer{

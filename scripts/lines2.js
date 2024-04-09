@@ -58,8 +58,8 @@ function HSBtriad(color1){
 
 function setup() {
   
-    step = .1
-  createCanvas(windowWidth,windowHeight);
+  step = .1
+  createCanvas(windowWidth-20,windowHeight-20);
   translate(windowWidth/2,windowHeight/2);
   colorMode(HSB);
   t = 0;
@@ -83,7 +83,7 @@ function setup() {
 }
 
 function draw(){
-  translate(size/2,size/2);
+  translate(windowWidth/2,windowHeight/2);
     background(c2[0])
     if(t % .1*numlines == 0){
          //background(c1)

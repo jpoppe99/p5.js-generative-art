@@ -1,6 +1,6 @@
 size = 40;
 canWidth = 800;
-canHeight= 800;
+canHeight= 820;
 function randColor(a, b){//returns 3-tuple of value a-b
   return [round(random(a,b)),round(random(a,b)),round(random(a,b))] 
 }
@@ -15,7 +15,7 @@ function setup() {
   color1 = randColor(0,100);
   color2 = complement(color1);
   console.log(color1,color2);
-  createCanvas(canWidth,canHeight);
+  createCanvas(windowWidth-20,windowHeight-20);
   background(color2);
   for (x = width; x >= 0;x-=size){
     for(y = height; y >= 0; y-=size){

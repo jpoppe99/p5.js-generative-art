@@ -12,7 +12,7 @@ function complement(color1){
 }
 
 function setup() {
-  createCanvas(canWidth, canHeight);
+  createCanvas(windowWidth,windowHeight);
   strokeWeight(3);
   color1 = randColor(25,240);
   color2=complement(color1);
