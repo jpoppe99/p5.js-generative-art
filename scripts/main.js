@@ -17,5 +17,5 @@ window.addEventListener("load", function() {
   for (var i = 0; i < buttons.length; ++i)
     buttons[i].addEventListener("click", main);
 	///debug
-	console.log(buttons)
+	//console.log(buttons)
 });

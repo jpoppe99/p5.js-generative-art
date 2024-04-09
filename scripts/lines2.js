@@ -59,8 +59,8 @@ function HSBtriad(color1){
 function setup() {
   
   step = .1
-  createCanvas(windowWidth-20,windowHeight-20);
-  translate(windowWidth/2,windowHeight/2);
+  createCanvas(windowWidth,windowHeight);
+  translate(width/2,height/2);
   colorMode(HSB);
   t = 0;
   frameRate(30);

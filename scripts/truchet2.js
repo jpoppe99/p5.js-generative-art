@@ -77,7 +77,7 @@ function roundTruch2b(x,y,size){
 
 
 function setup(){
-  createCanvas(canWidth,canHeight)
+  createCanvas(windowWidth,windowHeight);
   color1 = randColor(0,255);
   color2 = complement(color1);
   strokeCap(SQUARE)

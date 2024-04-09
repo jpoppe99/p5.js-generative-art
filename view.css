@@ -1,5 +1,12 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-color: #cfcfcf;
+  margin:0;
+  padding:0;
 
 }
 
@@ -24,6 +31,13 @@ button {
   text-align: center;
 
 }
+canvas {
+  display: block;
+  position: absolute; 
+  left: 0;
+  top: 0;
+}
+
 /*
 #art{
   display: block;

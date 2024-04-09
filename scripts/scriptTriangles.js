@@ -14,7 +14,7 @@ function complement(color1){
 function setup() {
   color1 = randColor(0,100);
   color2 = complement(color1);
-  console.log(color1,color2);
+  //console.log(color1,color2);
   createCanvas(windowWidth-20,windowHeight-20);
   background(color2);
   for (x = width; x >= 0;x-=size){
@@ -27,7 +27,7 @@ function setup() {
       tile5(x,y);
       }
       //color1[1] -= 2;
-      console.log(color1);
+      //console.log(color1);
     }
       
   }
