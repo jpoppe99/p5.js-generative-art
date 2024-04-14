@@ -15,7 +15,7 @@ function setup() {
   color1 = randColor(0,100);
   color2 = complement(color1);
   //console.log(color1,color2);
-  createCanvas(windowWidth-20,windowHeight-20);
+  createCanvas(windowWidth,windowHeight);
   background(color2);
   for (x = width; x >= 0;x-=size){
     for(y = height; y >= 0; y-=size){
